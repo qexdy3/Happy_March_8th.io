@@ -7,7 +7,7 @@ window.addEventListener('click', function(event) {
         titleLove.style.left = "200px";
         titleLove.style.opacity = '0';
         setTimeout(() => {
-            
+            titleLove.style.left = "0px";
             titleLove.style.zIndex = '-999';
             setTimeout(() => {
                 const victorinaLove = document.querySelector(".victorina-love");
