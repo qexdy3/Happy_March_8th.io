@@ -1,0 +1,178 @@
+body {
+    font-family: "alliance", mono, sans-serif;
+    background: #000814;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+  }
+  
+  h1 {
+      display: block;
+      font-size: 48px;
+      font-weight: 500 !important;
+      letter-spacing: -0.03em;
+      background: linear-gradient(264.51deg, #FFE580 4.38%, #FF7571 11.51%, #FF7270 25.06%, #EA5DAD 36.04%, #C2A0FD 47.63%, #9867F0 59.03%, #3BF0E4 69.96%, #33CE43 83.74%, #B2F4B6 95.62%);
+      background-position-x: 0%;
+      background-position-y: 0%;
+      background-size: auto;
+      background-clip: border-box;
+      background-position: 58% 50%;
+      background-size: 400%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-animation: gradient-shift 20s ease infinite;
+      animation: gradient-shift 20s ease infinite;
+      -webkit-text-fill-color: transparent;
+      margin: 0px;
+  }
+  
+  @keyframes gradient-shift {
+    0% {
+      background-position: 58% 50%;
+    }
+    25% {
+      background-position: 100% 0%;
+    }
+    75% {
+      background-position: 10% 50%;
+    }
+    100% {
+      background-position: 58% 50%;
+    }
+  }
+
+
+.title-love{
+    position: relative;
+    left: 0px;
+    opacity: 1;
+    z-index: 1;
+    transition: all 1s ease;
+}
+
+.title-love-outside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.victorina-love-outside{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0vh;
+}
+  
+  
+
+#radios{
+position:relative;
+width:50%;
+display: flex;
+justify-content: left;
+}
+
+  input[type="radio"]{
+    position:absolute;
+    right:1000%;
+  }
+  label{
+    float:left;
+    width:20%; padding-bottom:20%;
+    margin:0 2.5%;
+    background:rgba(255,255,255,.2);
+    border-radius:50%;
+    cursor:pointer;
+  }
+  #slider{
+    position:absolute;
+    left:0%; top:0;
+    width:15%; padding-bottom:15%;
+    margin:2.5% 0 0 5%;
+    background-color: #33CE43;
+    transition:transform 1s;
+    border-radius:50%;
+    animation-timing-function: ease-in-out;
+    animation-duration:.3s;
+    animation-fill-mode: forwards;
+    transition: 0.2s left .05s ease-in-out;
+  }
+  #input1:checked  ~ #slider{ animation-name: input1; left:0;background-color: #33CE43; }
+  #input2:checked  ~ #slider{ animation-name: input2; left:25%;background-color: #e72d2d; }
+  
+  @keyframes input1{ 30%, 70% { transform:scale(0.5); } }
+  @keyframes input2{ 30%, 70% { transform:scale(0.5); } }
+  
+
+  .img-cat{
+    width: 100%;
+    height: 200px;
+    background-image: url("res/2062789.512.png");
+    background-color: aliceblue;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 20px;
+    padding: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .buttons-love{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .button-love{
+    background-color: #192639;
+    border-radius: 20px;
+    width: 50%;
+    height: 62px;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  
+  .button-love h1{
+    font-size: 28px;
+    padding:15px 10px;
+  }
+
+  .button-love-slide{
+    position: relative;
+    bottom: 0px;
+    transition: all 0.3s ease;
+  }
+  
+  .victorina-love{
+    width: 90%;
+    position: absolute;
+    max-width: 450px;
+    opacity: 0;
+    z-index: -999;
+    transition: all 0.5s ease;
+  }
+
+  #button-title{
+    margin-top: 20px;
+    background-color: #192639;
+    border-radius: 20px;
+    padding: 10px 20px;
+    width: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #button-title h1{
+    font-size: 28px;
+  }
